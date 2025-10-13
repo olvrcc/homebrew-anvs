@@ -16,6 +16,7 @@ class Xvn < Formula
 
   def install
     bin.install "xvn"
+    lib.install "lib/xvn.sh"
   end
 
   def caveats
