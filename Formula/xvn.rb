@@ -7,10 +7,10 @@ class Xvn < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/olvrcc/xvn/releases/download/v1.5.0/xvn-aarch64-apple-darwin.tar.gz"
-      sha256 "10d894c0c367c5c71c22dc57d4b20e3576b1eeed8ce0b9ff2309b441957d4e02"
+      sha256 "ffb711761e1d62736e622c1e44f81c1f90000e62e2ab5ad8393f13e6a620283e"
     else
       url "https://github.com/olvrcc/xvn/releases/download/v1.5.0/xvn-x86_64-apple-darwin.tar.gz"
-      sha256 "91d79761591c3f8d8e7cd307ecfcedb7b4de48a0898ef699d46bf6a70c647b00"
+      sha256 "38b804035e1bccb1efd85879ea99216b74681e0cefaeb2324c10a56fcdec4d50"
     end
   end
 
