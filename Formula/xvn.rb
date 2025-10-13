@@ -1,16 +1,16 @@
 class Xvn < Formula
   desc "Automatic Node.js version switching - 2-3x faster than avn"
   homepage "https://github.com/olvrcc/xvn"
-  version "1.5.0"
+  version "1.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/olvrcc/xvn/releases/download/v1.5.0/xvn-aarch64-apple-darwin.tar.gz"
-      sha256 "ffb711761e1d62736e622c1e44f81c1f90000e62e2ab5ad8393f13e6a620283e"
+      url "https://github.com/olvrcc/xvn/releases/download/v1.6.0/xvn-aarch64-apple-darwin.tar.gz"
+      sha256 "d435ac6e69d249165c8a6523f43f66961594e0ab5194d64371764a9f7c913312"
     else
-      url "https://github.com/olvrcc/xvn/releases/download/v1.5.0/xvn-x86_64-apple-darwin.tar.gz"
-      sha256 "38b804035e1bccb1efd85879ea99216b74681e0cefaeb2324c10a56fcdec4d50"
+      url "https://github.com/olvrcc/xvn/releases/download/v1.6.0/xvn-x86_64-apple-darwin.tar.gz"
+      sha256 "10b31a162e2bd58b6c5b46b576c2efc31f09731640df3ac67ebb610d35b4d3b3"
     end
   end
 
