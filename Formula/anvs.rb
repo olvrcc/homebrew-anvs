@@ -7,10 +7,10 @@ class Anvs < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/olvrcc/anvs/releases/download/v2.0.0/anvs-aarch64-apple-darwin.tar.gz"
-      sha256 "TO_BE_UPDATED_AFTER_RELEASE"
+      sha256 "781833f61bfef137cf8a1dbf4337b4e101ec0a9a543bbb8d921a0aff410d869b"
     else
       url "https://github.com/olvrcc/anvs/releases/download/v2.0.0/anvs-x86_64-apple-darwin.tar.gz"
-      sha256 "TO_BE_UPDATED_AFTER_RELEASE"
+      sha256 "30a1198f7634de5083d021ff2eeaa75fb4a11445f41332b651f7813ae368c04a"
     end
   end
 
