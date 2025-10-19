@@ -1,28 +1,27 @@
 class Anvs < Formula
-  desc "Automatic Node.js version switching - 2-3x faster than avn"
+  desc "Automatic Node.js version switching - fast, modern CLI"
   homepage "https://github.com/olvrcc/anvs"
-  version "2.0.0"
+  version "2.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/olvrcc/anvs/releases/download/v2.0.0/anvs-aarch64-apple-darwin.tar.gz"
-      sha256 "781833f61bfef137cf8a1dbf4337b4e101ec0a9a543bbb8d921a0aff410d869b"
+      url "https://github.com/olvrcc/anvs/releases/download/v2.1.0/anvs-aarch64-apple-darwin.tar.gz"
+      sha256 "592f45e735382cb80c7fe6d429754cd4f913f4d1b2a8bcfc26ab9fa2823392ad"
     else
-      url "https://github.com/olvrcc/anvs/releases/download/v2.0.0/anvs-x86_64-apple-darwin.tar.gz"
-      sha256 "30a1198f7634de5083d021ff2eeaa75fb4a11445f41332b651f7813ae368c04a"
+      url "https://github.com/olvrcc/anvs/releases/download/v2.1.0/anvs-x86_64-apple-darwin.tar.gz"
+      sha256 "533d754c52bdaa20607dfa80affaade5e851c8a24868325880ff38def604bb17"
     end
   end
 
   def install
     bin.install "anvs"
-    lib.install "lib/anvs.sh"
   end
 
   def caveats
     <<~EOS
       To set up anvs shell integration, run:
-        anvs setup
+        anvs init
 
       Then restart your shell or run:
         source ~/.bashrc  # or ~/.zshrc
